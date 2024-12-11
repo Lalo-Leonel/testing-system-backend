@@ -7,7 +7,6 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-
 app.listen(8080, () => {
     console.log(`App running at http://localhost:8080`);
 });
