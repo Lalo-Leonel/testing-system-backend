@@ -8,7 +8,10 @@ const cors_1 = __importDefault(require("cors"));
 const mongoose_1 = __importDefault(require("mongoose"));
 const test_1 = __importDefault(require("./routes/test"));
 const app = (0, express_1.default)();
-app.use((0, cors_1.default)());
+app.use((0, cors_1.default)({
+    origin: "*",
+    credentials: false
+}));
 app.use(express_1.default.json());
 app.listen(8080, () => {
     console.log(`App running at http://localhost:8080`);
