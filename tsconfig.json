@@ -10,7 +10,7 @@
         "noImplicitAny": true,
         "esModuleInterop": true,
     },
-    "include": ["src/**/*", "api/**/*"],
+    "include": ["src/**/*"],
     "exclude": [
         "src/**/*.test.ts",
         "node_modules",
