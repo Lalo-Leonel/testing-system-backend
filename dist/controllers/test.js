@@ -15,13 +15,13 @@ const createTest = async (req, res) => {
         });
         await test.save();
         res.status(201).json({
-            message: "Prueba creado exitosamente.",
+            message: 'Prueba creado exitosamente.',
             data: test,
         });
     }
     catch (error) {
         res.status(500).json({
-            message: "Error al crear la Prueba.",
+            message: 'Error al crear la Prueba.',
             error: error.message,
         });
     }

@@ -6,20 +6,20 @@ const TestSchema = new mongoose_1.Schema({
     type: {
         type: String,
         required: true,
-        enum: ["desarrollar", "generar"],
+        enum: ["desarrollar", "generar"]
     },
     question: {
         type: String,
-        required: true,
+        required: true
     },
     solution: {
         type: String,
         required: function () {
             return this.type === "generar";
-        },
-    },
+        }
+    }
 }, {
-    timestamps: true,
+    timestamps: true
 });
-exports.TestModel = (0, mongoose_1.model)("Test", TestSchema);
+exports.TestModel = (0, mongoose_1.model)('Test', TestSchema);
 //# sourceMappingURL=test.js.map
